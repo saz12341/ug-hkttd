@@ -1,0 +1,38 @@
+site_name: HkTtd User Guide
+site_description: HkTtd User Guide
+repo_url: https://github.com/HK-Timing-Module-Development/ug-hkttd
+repo_name: ug-hkttd
+
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.tabs
+  palette:
+    #    scheme: slate
+    scheme: default
+    primary: brown
+
+markdown_extensions:
+  - attr_list
+  - def_list
+  - pymdownx.blocks.caption
+  - markdown_katex:
+      no_inline_svg: true
+      insert_fonts_css: true
+#  - image_captions:
+#      numbering: true
+#  - caption:
+#      numbering: true
+
+nav:
+  - Top: index.md
+  - Version: version/version.md
+  - Hardware:
+      - Overview: hardware/overview/overview.md
+      - V1 mezzanine: hardware/v1-mezzanine/v1-mezzanine.md
+  - Firmware:
+      - Overview: firmware/overview/overview.md
+      - V1 FW: firmware/v1-fw/v1-fw.md
+  - Software: software/software.md
+  - Practical Usage: practical/practical.md
